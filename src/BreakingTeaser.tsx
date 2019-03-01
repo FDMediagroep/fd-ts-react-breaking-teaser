@@ -30,8 +30,8 @@ export interface Props {
 export default class BreakingTeaser extends PureComponent<Props, any> {
     state: any = {
         image: {
-            src: `${this.props.imageUrl}?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346`,
-            alt: this.props.alt
+            alt: this.props.alt,
+            src: `${this.props.imageUrl}?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346`
         },
         sourceSets: [{
             media: "(max-width:640px)",
