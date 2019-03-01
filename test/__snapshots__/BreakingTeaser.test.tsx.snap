@@ -1,0 +1,275 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BreakingTeaser renders bookmarked correctly 1`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-breaking-teaser default"
+>
+  <div
+    className="top-bar"
+  >
+    <span>
+      Breaking
+    </span>
+    <span
+      className="icons"
+    >
+      <i
+        className="share-social icon-share-alt"
+        data-hashtags="#Kitchensink"
+        data-id="123"
+        data-section="Monetair"
+        data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+        data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+        title="Delen"
+      />
+      <span
+        className="favorite selected"
+        data-addurl="/add-favorite"
+        data-articleid="123"
+        data-deleteurl="/delete-favorite"
+        data-key="123"
+        data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+        data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+        id="favorite123"
+        onClick={[Function]}
+        title="Bewaren"
+      >
+        <i
+          className="icon-bookmark"
+          title="Bewaren"
+        />
+        <i
+          className="icon-bookmark1"
+          title="Verwijder van bewaarlijst"
+        />
+      </span>
+      <a
+        className="comments-link"
+        href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen#comments"
+      >
+        <i
+          className="icon-comment-alt"
+        />
+        <span
+          className="comments-count"
+        >
+          99
+        </span>
+        <span
+          className="comments-suffix"
+        >
+          reacties
+        </span>
+      </a>
+    </span>
+  </div>
+  <a
+    className="teaser-link"
+    href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+  >
+    <figure>
+      <picture>
+        <source
+          media="(max-width:640px)"
+          srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346"
+        />
+        <source
+          media="(max-width:860px)"
+          srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247"
+        />
+        <source
+          media="(min-width:861px)"
+          srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344"
+        />
+        <img
+          alt="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+          src="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346"
+        />
+      </picture>
+    </figure>
+    <div
+      className="text-container"
+    >
+      <h2
+        className="fd-typography breaking-teaser-h"
+        textStyle="breaking-teaser-h"
+      >
+        Douane: 20 tot 30% meer aangiftes door groei in webwinkelen
+      </h2>
+      <p
+        className="intro"
+      >
+        Containers van warenhuizen als Amazon en Alibaba bevatten een veelheid aan producten die allemaal apart ingeklaard moeten worden.
+      </p>
+    </div>
+  </a>
+  <nav
+    className="related"
+  >
+    <a
+      className="related-link longread"
+      href="https://dev.fd.nl/profiel/1235280/als-vrouw-moet-je-onafhankelijk-zijn"
+    >
+      <span
+        className="related-title"
+      >
+        Als vrouw moet je altijd onafhankelijk zijn
+      </span>
+      <i
+        className="icon-chevron-right"
+      />
+    </a>
+    <a
+      className="related-link"
+      href="https://dev.fd.nl/economie-politiek/1235274/president-van-de-amerikaanse-fed-hamert-op-onafhankelijkheid"
+    >
+      <span
+        className="related-title"
+      >
+        President van de Amerikaanse Fed hamert op onafhankelijkheid
+      </span>
+      <i
+        className="icon-chevron-right"
+      />
+    </a>
+  </nav>
+</div>
+`;
+
+exports[`BreakingTeaser renders correctly 1`] = `
+<div
+  cardStyle="default"
+  className="fd-card fd-breaking-teaser default"
+>
+  <div
+    className="top-bar"
+  >
+    <span>
+      Breaking
+    </span>
+    <span
+      className="icons"
+    >
+      <i
+        className="share-social icon-share-alt"
+        data-hashtags="#Kitchensink"
+        data-id="123"
+        data-section="Monetair"
+        data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+        data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+        title="Delen"
+      />
+      <span
+        className="favorite"
+        data-addurl="/add-favorite"
+        data-articleid="123"
+        data-deleteurl="/delete-favorite"
+        data-key="123"
+        data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+        data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+        id="favorite123"
+        onClick={[Function]}
+        title="Bewaren"
+      >
+        <i
+          className="icon-bookmark"
+          title="Bewaren"
+        />
+        <i
+          className="icon-bookmark1"
+          title="Verwijder van bewaarlijst"
+        />
+      </span>
+      <a
+        className="comments-link"
+        href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen#comments"
+      >
+        <i
+          className="icon-comment-alt"
+        />
+        <span
+          className="comments-count"
+        >
+          99
+        </span>
+        <span
+          className="comments-suffix"
+        >
+          reacties
+        </span>
+      </a>
+    </span>
+  </div>
+  <a
+    className="teaser-link"
+    href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+  >
+    <figure>
+      <picture>
+        <source
+          media="(max-width:640px)"
+          srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346"
+        />
+        <source
+          media="(max-width:860px)"
+          srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247"
+        />
+        <source
+          media="(min-width:861px)"
+          srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344"
+        />
+        <img
+          alt="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+          src="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346"
+        />
+      </picture>
+    </figure>
+    <div
+      className="text-container"
+    >
+      <h2
+        className="fd-typography breaking-teaser-h"
+        textStyle="breaking-teaser-h"
+      >
+        Douane: 20 tot 30% meer aangiftes door groei in webwinkelen
+      </h2>
+      <p
+        className="intro"
+      >
+        Containers van warenhuizen als Amazon en Alibaba bevatten een veelheid aan producten die allemaal apart ingeklaard moeten worden.
+      </p>
+    </div>
+  </a>
+  <nav
+    className="related"
+  >
+    <a
+      className="related-link longread"
+      href="https://dev.fd.nl/profiel/1235280/als-vrouw-moet-je-onafhankelijk-zijn"
+    >
+      <span
+        className="related-title"
+      >
+        Als vrouw moet je altijd onafhankelijk zijn
+      </span>
+      <i
+        className="icon-chevron-right"
+      />
+    </a>
+    <a
+      className="related-link"
+      href="https://dev.fd.nl/economie-politiek/1235274/president-van-de-amerikaanse-fed-hamert-op-onafhankelijkheid"
+    >
+      <span
+        className="related-title"
+      >
+        President van de Amerikaanse Fed hamert op onafhankelijkheid
+      </span>
+      <i
+        className="icon-chevron-right"
+      />
+    </a>
+  </nav>
+</div>
+`;
