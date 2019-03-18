@@ -30,6 +30,7 @@ module.exports = {
     },
     externals: {
         '@fdmg/fd-card': '@fdmg/fd-card',
+        '@fdmg/fd-teaser': '@fdmg/fd-teaser',
         '@fdmg/fd-typography': '@fdmg/fd-typography',
         'react': 'react',
         'react-dom': 'react-dom',

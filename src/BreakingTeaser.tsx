@@ -2,11 +2,16 @@ import React, { PureComponent } from "react";
 import { createGlobalStyle } from "styled-components";
 import Card, { getAllCardStyles, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
-import TeaserFigure from "./TeaserFigure";
-import TeaserRelated, { RelatedArticle, TeaserRelatedStyle } from "./TeaserRelated";
+import {
+    RelatedArticle,
+    SourceSet,
+    TeaserFigure,
+    TeaserFigureStyle,
+    TeaserRelated,
+    TeaserRelatedStyle,
+    ImageType} from "@fdmg/fd-teaser";
 
 export interface Props {
-    alt: string;
     bookmarked?: boolean;
     bookmarkTitle?: string;
     cardStyle?: CardTypes;
@@ -18,7 +23,8 @@ export interface Props {
     onBookmark?: (e: React.MouseEvent<HTMLElement>) => void;
     related?: RelatedArticle[];
     id: string;
-    imageUrl: string;
+    image: ImageType;
+    sourceSets: SourceSet[];
     readableAge: string;
     removeBookmarkTitle?: string;
     shareTitle?: string;
@@ -28,23 +34,6 @@ export interface Props {
 }
 
 export default class BreakingTeaser extends PureComponent<Props, any> {
-    state: any = {
-        image: {
-            alt: this.props.alt,
-            src: `${this.props.imageUrl}?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346`
-        },
-        sourceSets: [{
-            media: "(max-width:640px)",
-            srcSet: `${this.props.imageUrl}?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346`
-        }, {
-            media: "(max-width:860px)",
-            srcSet: `${this.props.imageUrl}?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247`
-        }, {
-            media: "(min-width:861px)",
-            srcSet: `${this.props.imageUrl}?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344`
-        }]
-    };
-
     render() {
         return (
             <>
@@ -90,8 +79,8 @@ export default class BreakingTeaser extends PureComponent<Props, any> {
                     </div>
                     <a className="teaser-link" href={this.props.url}>
                         <TeaserFigure
-                            image={this.state.image}
-                            sourceSets={this.state.sourceSets}
+                            image={this.props.image}
+                            sourceSets={this.props.sourceSets}
                         />
 
                         <div className="text-container">
@@ -215,6 +204,7 @@ const GlobalStyle = createGlobalStyle`
 export const BreakingTeaserStyle = createGlobalStyle`
 ${getAllCardStyles().globalStyle.rules}
 ${getAllTextStyles(['breaking-teaser-h']).globalStyle.rules}
-${(GlobalStyle as any).globalStyle.rules}
+${(TeaserFigureStyle as any).globalStyle.rules}
 ${(TeaserRelatedStyle as any).globalStyle.rules}
+${(GlobalStyle as any).globalStyle.rules}
 `;

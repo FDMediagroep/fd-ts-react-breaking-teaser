@@ -68,18 +68,20 @@ exports[`BreakingTeaser renders bookmarked correctly 1`] = `
     className="teaser-link"
     href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
   >
-    <figure>
+    <figure
+      className="fd-teaser-figure"
+    >
       <picture>
         <source
-          media="(max-width:640px)"
+          media="(max-width: 640px)"
           srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346"
         />
         <source
-          media="(max-width:860px)"
+          media="(max-width: 860px)"
           srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247"
         />
         <source
-          media="(min-width:861px)"
+          media="(min-width: 861px)"
           srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344"
         />
         <img
@@ -205,18 +207,20 @@ exports[`BreakingTeaser renders correctly 1`] = `
     className="teaser-link"
     href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
   >
-    <figure>
+    <figure
+      className="fd-teaser-figure"
+    >
       <picture>
         <source
-          media="(max-width:640px)"
+          media="(max-width: 640px)"
           srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346"
         />
         <source
-          media="(max-width:860px)"
+          media="(max-width: 860px)"
           srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247"
         />
         <source
-          media="(min-width:861px)"
+          media="(min-width: 861px)"
           srcSet="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344"
         />
         <img

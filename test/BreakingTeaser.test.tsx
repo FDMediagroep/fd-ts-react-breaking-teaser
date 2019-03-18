@@ -11,8 +11,20 @@ describe('BreakingTeaser', () => {
             description="Containers van warenhuizen als Amazon en Alibaba bevatten een veelheid aan producten die allemaal apart ingeklaard moeten worden."
             url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
             hashTags="#Kitchensink"
-            imageUrl="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg"
-            alt="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+            image={{
+                src: 'https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346',
+                alt: 'Douane: 20 tot 30% meer aangiftes door groei in webwinkelen'
+            }}
+            sourceSets={[{
+                media: "(max-width: 640px)",
+                srcSet: `https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346`
+            }, {
+                media: "(max-width: 860px)",
+                srcSet: `https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247`
+            }, {
+                media: "(min-width: 861px)",
+                srcSet: `https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344`
+            }]}
             onBookmark={() => {}}
             subject="Monetair"
             readableAge="7 uur"
@@ -39,8 +51,20 @@ describe('BreakingTeaser', () => {
             description="Containers van warenhuizen als Amazon en Alibaba bevatten een veelheid aan producten die allemaal apart ingeklaard moeten worden."
             url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
             hashTags="#Kitchensink"
-            imageUrl="https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg"
-            alt="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+            image={{
+                src: 'https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346',
+                alt: 'Douane: 20 tot 30% meer aangiftes door groei in webwinkelen'
+            }}
+            sourceSets={[{
+                media: "(max-width: 640px)",
+                srcSet: `https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=616&h=346`
+            }, {
+                media: "(max-width: 860px)",
+                srcSet: `https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=740&h=247`
+            }, {
+                media: "(min-width: 861px)",
+                srcSet: `https://fd-external-development.imgix.net/43ed7a431f43ef9a3d43afd82d6ccbeb82610ffa.jpg?fit=crop&crop=faces&auto=format&fm=jpg&q=45&w=1034&h=344`
+            }]}
             onBookmark={() => {}}
             subject="Monetair"
             readableAge="7 uur"
