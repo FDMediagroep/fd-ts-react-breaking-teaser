@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-breaking-teaser",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "FD-themed breaking teaser",
   "types": "dist/BreakingTeaser.d.ts",
   "main": "dist/breaking-teaser.js",
@@ -57,14 +57,14 @@
     "ts-jest": "^24.0.0",
     "tslint": "^5.14.0",
     "tslint-react": "^3.6.0",
-    "typescript": "^3.3.3333",
+    "typescript": "^3.3.4000",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
   "dependencies": {
     "@fdmg/fd-card": "^1.0.10",
-    "@fdmg/fd-teaser": "^1.0.3",
-    "@fdmg/fd-typography": "^1.0.27",
+    "@fdmg/fd-teaser": "^1.0.5",
+    "@fdmg/fd-typography": "^1.0.28",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "styled-components": "^4.1.3",
