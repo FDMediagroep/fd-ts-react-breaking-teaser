@@ -124,6 +124,7 @@ const GlobalStyle = createGlobalStyle`
         display: flex;
         justify-content: space-between;
         align-items: center;
+        user-select: none;
         background-color: #c60f0f;
         color: #ffffff;
         font-family: 'ProximaNovaBold', sans-serif;
