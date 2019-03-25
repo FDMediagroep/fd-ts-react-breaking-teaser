@@ -14,16 +14,21 @@ exports[`BreakingTeaser renders bookmarked correctly 1`] = `
     <span
       className="icons"
     >
-      <i
-        className="share-social icon-share-alt"
-        data-hashtags="#Kitchensink"
-        data-id="123"
-        data-section="Monetair"
-        data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
-        data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
-        title="Delen"
-      />
-      <span
+      <a
+        className="share-social"
+        href="javascript: void(0);"
+      >
+        <i
+          className="share-social icon-share-alt"
+          data-hashtags="#Kitchensink"
+          data-id="123"
+          data-section="Monetair"
+          data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+          data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+          title="Delen"
+        />
+      </a>
+      <a
         className="favorite selected"
         data-addurl="/add-favorite"
         data-articleid="123"
@@ -31,6 +36,7 @@ exports[`BreakingTeaser renders bookmarked correctly 1`] = `
         data-key="123"
         data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
         data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+        href="javascript: void(0);"
         id="favorite123"
         onClick={[Function]}
         title="Bewaren"
@@ -43,7 +49,7 @@ exports[`BreakingTeaser renders bookmarked correctly 1`] = `
           className="icon-bookmark1"
           title="Verwijder van bewaarlijst"
         />
-      </span>
+      </a>
       <a
         className="comments-link"
         href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen#comments"
@@ -153,16 +159,21 @@ exports[`BreakingTeaser renders correctly 1`] = `
     <span
       className="icons"
     >
-      <i
-        className="share-social icon-share-alt"
-        data-hashtags="#Kitchensink"
-        data-id="123"
-        data-section="Monetair"
-        data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
-        data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
-        title="Delen"
-      />
-      <span
+      <a
+        className="share-social"
+        href="javascript: void(0);"
+      >
+        <i
+          className="share-social icon-share-alt"
+          data-hashtags="#Kitchensink"
+          data-id="123"
+          data-section="Monetair"
+          data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
+          data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+          title="Delen"
+        />
+      </a>
+      <a
         className="favorite"
         data-addurl="/add-favorite"
         data-articleid="123"
@@ -170,6 +181,7 @@ exports[`BreakingTeaser renders correctly 1`] = `
         data-key="123"
         data-title="Douane: 20 tot 30% meer aangiftes door groei in webwinkelen"
         data-url="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen"
+        href="javascript: void(0);"
         id="favorite123"
         onClick={[Function]}
         title="Bewaren"
@@ -182,7 +194,7 @@ exports[`BreakingTeaser renders correctly 1`] = `
           className="icon-bookmark1"
           title="Verwijder van bewaarlijst"
         />
-      </span>
+      </a>
       <a
         className="comments-link"
         href="https://dev.fd.nl/ondernemen/1254849/douane-20-tot-30-meer-aangiftes-door-groei-in-webwinkelen#comments"

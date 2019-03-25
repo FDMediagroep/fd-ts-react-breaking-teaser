@@ -42,16 +42,19 @@ export default class BreakingTeaser extends PureComponent<Props, any> {
                     <div className="top-bar">
                         <span>Breaking</span>
                         <span className="icons">
-                            <i
-                                data-url={this.props.url}
-                                data-id={this.props.id}
-                                data-title={this.props.title}
-                                data-section={this.props.subject}
-                                data-hashtags={this.props.hashTags}
-                                className="share-social icon-share-alt"
-                                title={this.props.shareTitle ? this.props.shareTitle : 'Delen'}
-                            />
-                            <span
+                            <a className="share-social" href="javascript: void(0);">
+                                <i
+                                    data-url={this.props.url}
+                                    data-id={this.props.id}
+                                    data-title={this.props.title}
+                                    data-section={this.props.subject}
+                                    data-hashtags={this.props.hashTags}
+                                    className="share-social icon-share-alt"
+                                    title={this.props.shareTitle ? this.props.shareTitle : 'Delen'}
+                                />
+                            </a>
+                            <a
+                                href="javascript: void(0);"
                                 className={`favorite${this.props.bookmarked ? ' selected' : ''}`}
                                 data-key={this.props.id}
                                 data-addurl='/add-favorite'
@@ -65,7 +68,7 @@ export default class BreakingTeaser extends PureComponent<Props, any> {
                             >
                                 <i className="icon-bookmark" title={this.props.bookmarkTitle ? this.props.bookmarkTitle : 'Bewaren'}/>
                                 <i className="icon-bookmark1" title={this.props.removeBookmarkTitle ? this.props.removeBookmarkTitle : 'Verwijder van bewaarlijst'}/>
-                            </span>
+                            </a>
                             <a className="comments-link" href={`${this.props.url}#comments`}>
                                 {this.props.comments ? (
                                     <>
@@ -136,7 +139,12 @@ const GlobalStyle = createGlobalStyle`
             padding: .5rem;
         }
 
+        .share-social {
+            color: #ffffff;
+        }
+
         .favorite {
+            color: #ffffff;
             padding: 0;
             .icon-bookmark1 {
                 display: none;
