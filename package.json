@@ -1,6 +1,6 @@
 {
   "name": "@fdmg/fd-breaking-teaser",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "FD-themed breaking teaser",
   "types": "dist/BreakingTeaser.d.ts",
   "main": "dist/breaking-teaser.js",

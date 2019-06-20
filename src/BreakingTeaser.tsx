@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import { createGlobalStyle, css } from "styled-components";
 import Card, { getAllCardStyles, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
@@ -33,70 +33,68 @@ export interface Props {
     url: string;
 }
 
-export default class BreakingTeaser extends PureComponent<Props, any> {
-    render() {
-        return (
-            <>
-                <GlobalStyle/>
-                <Card cardStyle={this.props.cardStyle ? this.props.cardStyle : 'default'} className={`fd-breaking-teaser${this.props.className ? ` ${this.props.className}` : ''}`}>
-                    <div className="top-bar">
-                        <span>Breaking</span>
-                        <span className="icons">
-                            <a className="share-social" href="javascript: void(0);">
-                                <i
-                                    data-url={this.props.url}
-                                    data-id={this.props.id}
-                                    data-title={this.props.title}
-                                    data-section={this.props.subject}
-                                    data-hashtags={this.props.hashTags}
-                                    className="share-social icon-share-alt"
-                                    title={this.props.shareTitle ? this.props.shareTitle : 'Delen'}
-                                />
-                            </a>
-                            <a
-                                href="javascript: void(0);"
-                                className={`favorite${this.props.bookmarked ? ' selected' : ''}`}
-                                data-key={this.props.id}
-                                data-addurl='/add-favorite'
-                                data-deleteurl='/delete-favorite'
-                                data-title={this.props.title}
-                                data-url={this.props.url}
-                                data-articleid={this.props.id}
-                                title="Bewaren"
-                                id={`favorite${this.props.id}`}
-                                onClick={this.props.onBookmark}
-                            >
-                                <i className="icon-bookmark" title={this.props.bookmarkTitle ? this.props.bookmarkTitle : 'Bewaren'}/>
-                                <i className="icon-bookmark1" title={this.props.removeBookmarkTitle ? this.props.removeBookmarkTitle : 'Verwijder van bewaarlijst'}/>
-                            </a>
-                            <a className="comments-link" href={`${this.props.url}#comments`}>
-                                {this.props.comments ? (
-                                    <>
-                                        <i className="icon-comment-alt"/>
-                                        <span className="comments-count">{this.props.comments}</span>
-                                        <span className="comments-suffix">{this.props.comments > 1 ? 'reacties' : 'reactie'}</span>
-                                    </>
-                                ) : null}
-                            </a>
-                        </span>
+export default function BreakingTeaser(props: Props) {
+    return (
+        <>
+            <GlobalStyle/>
+            <Card cardStyle={props.cardStyle ? props.cardStyle : 'default'} className={`fd-breaking-teaser${props.className ? ` ${props.className}` : ''}`}>
+                <div className="top-bar">
+                    <span>Breaking</span>
+                    <span className="icons">
+                        <a className="share-social" href="javascript: void(0);">
+                            <i
+                                data-url={props.url}
+                                data-id={props.id}
+                                data-title={props.title}
+                                data-section={props.subject}
+                                data-hashtags={props.hashTags}
+                                className="share-social icon-share-alt"
+                                title={props.shareTitle ? props.shareTitle : 'Delen'}
+                            />
+                        </a>
+                        <a
+                            href="javascript: void(0);"
+                            className={`favorite${props.bookmarked ? ' selected' : ''}`}
+                            data-key={props.id}
+                            data-addurl='/add-favorite'
+                            data-deleteurl='/delete-favorite'
+                            data-title={props.title}
+                            data-url={props.url}
+                            data-articleid={props.id}
+                            title="Bewaren"
+                            id={`favorite${props.id}`}
+                            onClick={props.onBookmark}
+                        >
+                            <i className="icon-bookmark" title={props.bookmarkTitle ? props.bookmarkTitle : 'Bewaren'}/>
+                            <i className="icon-bookmark1" title={props.removeBookmarkTitle ? props.removeBookmarkTitle : 'Verwijder van bewaarlijst'}/>
+                        </a>
+                        <a className="comments-link" href={`${props.url}#comments`}>
+                            {props.comments ? (
+                                <>
+                                    <i className="icon-comment-alt"/>
+                                    <span className="comments-count">{props.comments}</span>
+                                    <span className="comments-suffix">{props.comments > 1 ? 'reacties' : 'reactie'}</span>
+                                </>
+                            ) : null}
+                        </a>
+                    </span>
+                </div>
+                <a className="teaser-link" href={props.url}>
+                    <TeaserFigure
+                        image={props.image}
+                        sourceSets={props.sourceSets}
+                    />
+
+                    <div className="text-container">
+                        <TypoGraphy textStyle="breaking-teaser-h"><h2>{props.title}</h2></TypoGraphy>
+                        {props.description ? <p className="intro">{props.description}</p> : null}
                     </div>
-                    <a className="teaser-link" href={this.props.url}>
-                        <TeaserFigure
-                            image={this.props.image}
-                            sourceSets={this.props.sourceSets}
-                        />
 
-                        <div className="text-container">
-                            <TypoGraphy textStyle="breaking-teaser-h"><h2>{this.props.title}</h2></TypoGraphy>
-                            {this.props.description ? <p className="intro">{this.props.description}</p> : null}
-                        </div>
-
-                    </a>
-                    <TeaserRelated items={this.props.related}/>
-                </Card>
-            </>
-        );
-    }
+                </a>
+                <TeaserRelated items={props.related}/>
+            </Card>
+        </>
+    );
 }
 
 const styles = css`
@@ -210,8 +208,6 @@ const styles = css`
 }
 `;
 
-const GlobalStyle = createGlobalStyle`${styles}`;
-
 export const BreakingTeaserStyle = css`
 ${getAllCardStyles()}
 ${getAllTextStyles(['breaking-teaser-h'])}
@@ -219,3 +215,5 @@ ${TeaserFigureStyle}
 ${TeaserRelatedStyle}
 ${styles}
 `;
+
+const GlobalStyle = createGlobalStyle`${BreakingTeaserStyle}`;

@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React from "react";
 import { CardTypes } from "@fdmg/fd-card";
 import { RelatedArticle, SourceSet, ImageType } from "@fdmg/fd-teaser";
 export interface Props {
@@ -22,7 +22,5 @@ export interface Props {
     title: string;
     url: string;
 }
-export default class BreakingTeaser extends PureComponent<Props, any> {
-    render(): JSX.Element;
-}
+export default function BreakingTeaser(props: Props): JSX.Element;
 export declare const BreakingTeaserStyle: import("styled-components").FlattenSimpleInterpolation;
