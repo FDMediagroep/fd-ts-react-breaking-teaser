@@ -25,4 +25,4 @@ export interface Props {
 export default class BreakingTeaser extends PureComponent<Props, any> {
     render(): JSX.Element;
 }
-export declare const BreakingTeaserStyle: import("styled-components").GlobalStyleComponent<{}, import("styled-components").DefaultTheme>;
+export declare const BreakingTeaserStyle: import("styled-components").FlattenSimpleInterpolation;

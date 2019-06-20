@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, css } from "styled-components";
 import Card, { getAllCardStyles, CardTypes } from "@fdmg/fd-card";
 import TypoGraphy, { getAllTextStyles } from "@fdmg/fd-typography";
 import {
@@ -99,7 +99,7 @@ export default class BreakingTeaser extends PureComponent<Props, any> {
     }
 }
 
-const GlobalStyle = createGlobalStyle`
+const styles = css`
 .fd-breaking-teaser {
     font-family: 'ProximaNovaRegular', Helvetica, sans-serif;
 
@@ -210,10 +210,12 @@ const GlobalStyle = createGlobalStyle`
 }
 `;
 
-export const BreakingTeaserStyle = createGlobalStyle`
-${getAllCardStyles().globalStyle.rules}
-${getAllTextStyles(['breaking-teaser-h']).globalStyle.rules}
-${(TeaserFigureStyle as any).globalStyle.rules}
-${(TeaserRelatedStyle as any).globalStyle.rules}
-${(GlobalStyle as any).globalStyle.rules}
+const GlobalStyle = createGlobalStyle`${styles}`;
+
+export const BreakingTeaserStyle = css`
+${getAllCardStyles()}
+${getAllTextStyles(['breaking-teaser-h'])}
+${TeaserFigureStyle}
+${TeaserRelatedStyle}
+${styles}
 `;
