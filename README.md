@@ -1,20 +1,26 @@
+> :exclamation: **DEPRECATED** :exclamation: : Superseded by @fdmg/design-system. See: https://github.com/FDMediagroep/fd-design-system
+
 [![Build Status](https://travis-ci.org/FDMediagroep/fd-ts-react-breaking-teaser.svg?branch=master)](https://travis-ci.org/FDMediagroep/fd-ts-react-breaking-teaser)
 [![Coverage Status](https://coveralls.io/repos/github/FDMediagroep/fd-ts-react-breaking-teaser/badge.svg?branch=master)](https://coveralls.io/github/FDMediagroep/fd-ts-react-breaking-teaser?branch=master)
 [![npm version](https://badge.fury.io/js/%40fdmg%2Ffd-breaking-teaser.svg)](https://badge.fury.io/js/%40fdmg%2Ffd-breaking-teaser)
 
-
 # fd-breaking-teaser
+
 FD-themed breaking teaser.
 
 # Installation
-* Run `npm i -D @fdmg/fd-breaking-teaser`
+
+-   Run `npm i -D @fdmg/fd-breaking-teaser`
 
 # Demo
+
 To run the demo, check-out this repository and run `npm run build-demo`.
 After the build succeeded you can open `dist/demo.html` with your webbrowser.
-* [Demo](http://static.fd.nl/react/breaking-teaser/demo.html)
+
+-   [Demo](http://static.fd.nl/react/breaking-teaser/demo.html)
 
 # Usage
+
 ```
 import BreakingTeaser from '@fdmg/fd-breaking-teaser';
 ...
